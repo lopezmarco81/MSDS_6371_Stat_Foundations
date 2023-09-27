@@ -1,0 +1,23 @@
+PROC MEANS DATA=Edu; 
+    CLASS Educ; 
+    VAR Income2005; 
+RUN; 
+ 
+PROC FREQ DATA=Edu; 
+    TABLES Educ; 
+RUN; 
+ 
+PROC TTEST DATA=Edu; 
+    CLASS Educ; 
+    VAR Income2005; 
+    WELCH; 
+RUN; 
+ 
+PROC SGPLOT DATA=Edu; 
+    HISTOGRAM Income2005 / GROUP=Educ; 
+RUN; 
+ 
+PROC UNIVARIATE DATA=Edu PLOT NORMAL; 
+    CLASS Educ; 
+    VAR Income2005; 
+RUN; 
