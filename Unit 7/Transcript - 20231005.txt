@@ -1,0 +1,47 @@
+10/05/2023
+
+Transcript
+
+Search
+19:13:46
+These are the data. And, note that the question here is, we found in the last unit there was overwhelming evidence that at least one pair of sports had a different mean height to ran extra some squares path.
+19:14:00
+Did there significant evidence to suggest the mean height of basketball players was different than that of other sports? Another method to test for this difference is with a contrast.
+19:14:06
+Create a contrast to the test to see if there's If there is evidence, not proof.
+19:14:12
+But evidence that the mean height of basketball players It's significantly different than the average of the mean heights of the other 4 sports.
+19:14:23
+And now we can appreciate the fact. That has very different meaning. Then the alternative of the combined. We don't want to use the combined here.
+19:14:33
+We want to look at the mean of the average of the other 4 sports. So. So, but again, I wanna underline that it's awesome.
+19:14:42
+The reason why we can have this conversation that we can see the difference and we can appreciate the difference is because we went through the lives of the for life session to find it because everybody put so much work into that piece.
+19:14:52
+So we're gonna go out to break out here real quick. I'd like for everybody to to kind of warm up to this problem, show what they're.
+19:14:58
+You know, if you combined them together. Right? That's awesome. Hey, you know, I combine these things together.
+19:15:03
+That's thinking. That's a really, you know, that's that's showing progress.
+19:15:06
+If somebody broke them into pieces and used the contrast rate, some of us used contrary contrast weights one and negative one.
+19:15:13
+One for basketball and negative one for the others. One for basketball and negative one for the others. Okay, great.
+19:15:16
+We can all learn from that. Some of us used contrast weights for one. For basketball and negative point 2 5 for the rest.
+19:15:24
+Thus breaking it up. So we're gonna come back in, go through it. But, I wanted everybody just take 5 min.
+19:15:32
+And, and just warm up to the problem and share. Be in the same groups. And let's do it.
+19:15:40
+Yep, so let's go ahead. I was. I'm gonna prevent myself from getting long winded here, so.
+19:15:47
+That's that
+AE
+Adam Ercanbrack
+20:25:40
+I tried to change this so that it would work for comparing the income levels and educational levels.
+20:25:43
+And what I was running into these problems like this, warning, ignoring unknown parameters, which was actually impacting.
+20:25:53
+The way I
