@@ -1,32 +1,22 @@
-bachelors <- subset(data, Educ == 16)
-higher_degree <- subset(data, Educ > 16)
+file_path <- "C:/Users/lopez/OneDrive/Old Documents & Artifacts/Documents/GitHub/MSDS_6371_Stat_Foundations/Unit 5/HW/EducationData.csv"
+data <- read.csv(file_path)
 
-full_model <- lm(log_income2005 ~ Educ, data=data)
-reduced_model <- lm(log_income2005 ~ 1, data=data)
+head(data)
 
-anova_results <- anova(reduced_model, full_model)
+model <- aov(Income2005 ~ Educ, data = data)
 
-summary(full_model)$r.squared
+tk <- TukeyHSD(model)
+print(tk)
 
-boxplot(log_income2005 ~ Educ, data=data, main="Boxplot of log-transformed incomes by Education Level")
-hist(bachelors$log_income2005, main="Histogram of log-transformed incomes for Bachelors", xlab="log(Income)")
-hist(higher_degree$log_income2005, main="Histogram of log-transformed incomes for > Bachelors", xlab="log(Income)")
-plot(data$Educ, data$log_income2005, main="Scatterplot of log-transformed incomes by Education Level", xlab="Education Level", ylab="log(Income)")
+comparison <- glht(model, linfct = mcp(Educ = "Dunnett"))
+summary(comparison)
 
-summary(higher_degree$log_income2005)
-hist(cleaned_data, breaks=20, main="Histogram of log-transformed incomes for > Bachelors", xlab="log(Income)")
+# Convert Educ to a factor
+data$Educ <- as.factor(data$Educ)
 
-length(cleaned_data)
+# Rerun the ANOVA
+model <- aov(Income2005 ~ Educ, data = data)
 
-sum(is.na(higher_degree$log_income2005))
-sum(is.infinite(higher_degree$log_income2005))
-nrow(higher_degree)
-
-length(higher_degree$log_income2005)
-hist(higher_degree$log_income2005, main="Histogram of log-transformed incomes for > Bachelors", xlab="log(Income)")
-
-summary(higher_degree$log_income2005)
-sum(is.na(higher_degree$log_income2005))
-sum(is.infinite(higher_degree$log_income2005))
-
-summary(higher_degree$Income2005)
+# Conduct the Tukey-Kramer procedure
+tk <- TukeyHSD(model)
+print(tk)
